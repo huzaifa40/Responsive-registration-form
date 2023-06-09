@@ -1,0 +1,109 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', serif;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    min-height: 655px;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top left,#CEC6C6, #151414);
+}
+
+.container{
+    max-width: 900px;
+    background-color: rgb(244, 248, 252);    
+    padding: 10px 10px;
+    border-radius: 10px;
+    width: 100%;
+    position: relative;
+    min-height: 500px;
+    margin: 8px 20px;
+}
+
+.container form{
+    padding: 5px 20px;    
+    position: relative;
+}
+
+.container header{
+    font-size: 25px;
+    text-align: center;
+    font-weight: bold;
+    padding: 10px 0px;
+    color: #151414;
+    position: relative;
+}
+
+.container form .fields{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.fields .input-field{
+    display: flex;
+    flex-direction: column;
+    width: calc(100% / 3 - 40px);
+    margin: 5px 0px;
+}
+
+.input-field label{
+    text-align: left;
+    font-size: 14px;
+}
+
+span{
+    font-size: 20px;
+    font-weight: 500;    
+}
+
+.input-field input , select{
+    border: 1px solid rgb(151, 144, 144);
+    margin: 4px 0px 6px 0px ;
+    padding: 10px 14px;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.id-info{
+    margin-top: 7px;
+}
+
+button{
+    padding: 7px 40px;
+    margin: 10px 0px;
+    background-color: rgb(34, 30, 30);
+    color: #fff;
+    border: 1px solid rgb(168, 160, 160);
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+button:hover{
+    background-color: rgb(104, 152, 224);
+}
+
+@media (max-width: 750px) {
+    .container form{
+        overflow-y: scroll;
+    }
+
+    .container form::-webkit-scrollbar{
+        display: none;
+    }
+
+    .fields .input-field{
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 500px) {
+    .container .fields .input-field{
+        width: 100%;
+    }  
+} 
